@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biografia do André</title>
+  <title>Biografias</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #000;
-      color: #000;
     }
 
     .top {
@@ -19,36 +18,39 @@
       background-size: cover;
     }
 
-    .bottom {
+    .container {
       background-color: #d6b656;
       min-height: calc(100vh - 250px);
       display: flex;
+      gap: 40px;
       padding: 40px;
-      gap: 30px;
+      justify-content: center;
       align-items: flex-start;
     }
 
+    .card {
+      display: flex;
+      gap: 20px;
+      max-width: 500px;
+    }
+
     .foto {
-      width: 200px;
-      height: 200px;
-      background: url('andre.jpg') no-repeat center;
+      width: 180px;
+      height: 180px;
       background-size: cover;
+      background-position: center;
       border-radius: 20px;
       flex-shrink: 0;
     }
 
-    .conteudo {
-      max-width: 600px;
+    .conteudo h1 {
+      margin: 0 0 15px 0;
+      font-size: 32px;
     }
 
-    h1 {
-      font-size: 42px;
-      margin: 0 0 20px 0;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
+    .conteudo p {
+      font-size: 16px;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -56,53 +58,30 @@
 
   <div class="top"></div>
 
-  <div class="bottom">
-    <div class="foto"></div>
+  <div class="container">
 
-    <div class="conteudo">
-      <h1>André</h1>
-      <p>
-        André é uma figura única, conhecido pelo seu estilo marcante e presença inesquecível.
-        Com uma personalidade forte e um olhar expressivo, ele destaca-se facilmente em qualquer ambiente.
-      </p>
-
-      <p>
-        Criativo e autêntico, André gosta de explorar novas ideias e não tem medo de ser diferente.
-        A sua forma de ver o mundo mistura humor, intensidade e originalidade.
-      </p>
-
-      <p>
-        Seja pela sua aparência ou atitude, André deixa sempre uma impressão duradoura.
-        Uma presença que não passa despercebida.
-      </p>
-    </div>
+    <!-- André -->
+    <div class="card">
+      <div class="foto" style="background-image: url('andre.jpg');"></div>
+      <div class="conteudo">
+        <h1>André</h1>
+        <p>André é uma figura única, conhecido pelo seu estilo marcante e presença inesquecível.</p>
+        <p>Criativo e autêntico, gosta de explorar novas ideias e não tem medo de ser diferente.</p>
+        <p>Uma presença que nunca passa despercebida.</p>
       </div>
-  </div>
-
-  <!-- Espaço entre secções -->
-  <div style="height:60px;background:#000"></div>
-
-  <!-- Secção do Tomás -->
-  <div class="bottom">
-    <div class="foto" style="background:url('tomas.jpg') no-repeat center; background-size:cover;"></div>
-
-    <div class="conteudo">
-      <h1>Tomás</h1>
-      <p>
-        Tomás é conhecido pela sua energia e personalidade descontraída.
-        Sempre pronto para uma boa conversa ou para mandar uma piada no momento certo.
-      </p>
-
-      <p>
-        Com um espírito curioso, gosta de experimentar coisas novas e viver experiências diferentes.
-        A sua atitude positiva torna-o uma presença agradável em qualquer grupo.
-      </p>
-
-      <p>
-        Entre momentos sérios e descontraídos, Tomás mantém sempre o equilíbrio,
-        deixando a sua marca de forma natural e autêntica.
-      </p>
     </div>
+
+    <!-- Tomás -->
+    <div class="card">
+      <div class="foto" style="background-image: url('tomas.jpg');"></div>
+      <div class="conteudo">
+        <h1>Tomás</h1>
+        <p>Tomás é conhecido pela sua energia e personalidade descontraída.</p>
+        <p>Sempre pronto para uma boa conversa e para experimentar coisas novas.</p>
+        <p>Uma presença positiva e autêntica em qualquer situação.</p>
+      </div>
+    </div>
+
   </div>
 
 </body>
