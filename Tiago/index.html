@@ -1,29 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>Pila</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-  }
-  img {
-    max-width: 100%;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografias - ApiçA</title>
+  <style>
+    /* Reset básico e garantir que o corpo ocupe a tela toda */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container principal em coluna */
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Parte de Cima: A Imagem que estica (50% da altura da tela) */
+    .topo {
+      height: 50vh;
+      width: 100%;
+      background-color: #000;
+    }
+
+    .topo img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill; /* Estica a imagem conforme a janela muda */
+      display: block;
+    }
+
+    /* Parte de Baixo: Fundo Amarelo contendo o título e as biografias */
+    .conteudo-amarelo {
+      background-color: #E6D45E; /* O amarelo da imagem */
+      min-height: 50vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .titulo-apica {
+      margin: 0 0 40px 0;
+      font-size: clamp(40px, 8vw, 80px);
+      color: #000;
+      font-weight: normal;
+    }
+
+    /* Layout das Biografias */
+    .biografias-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: flex-start;
+    }
+
+    .card {
+      display: flex;
+      gap: 20px;
+      max-width: 500px;
+      align-items: center;
+    }
+
+    .foto {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      flex-shrink: 0;
+      border: 3px solid #000;
+    }
+
+    .info h1 {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
 
-<img src="Images/daddy.jpg" alt="Image">
+  <div class="main-wrapper">
+    
+    <div class="topo">
+      <img src="andre.jpg" alt="Topo Esticado">
+    </div>
+
+    <div class="conteudo-amarelo">
+      <h1 class="titulo-apica">ApiçA</h1>
+
+      <div class="biografias-container">
+        
+        <div class="card">
+          <div class="foto" style="background-image: url('andre.jpg');"></div>
+          <div class="info">
+            <h1>André</h1>
+            <p>André é uma figura única, conhecido pelo seu estilo marcante e presença inesquecível.</p>
+            <p>Criativo e autêntico, gosta de explorar novas ideias.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="foto" style="background-image: url('tomas.jpg');"></div>
+          <div class="info">
+            <h1>Tomás</h1>
+            <p>Tomás é conhecido pela sua energia e personalidade descontraída.</p>
+            <p>Sempre pronto para uma boa conversa e para experimentar coisas novas.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
-
