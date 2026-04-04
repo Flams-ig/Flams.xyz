@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apiça</title>
+  <title>Biografia do André</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #000;
+      color: #000;
     }
 
     .top {
@@ -20,16 +21,34 @@
 
     .bottom {
       background-color: #d6b656;
-      height: calc(100vh - 250px);
+      min-height: calc(100vh - 250px);
       display: flex;
-      align-items: flex-start;
       padding: 40px;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .foto {
+      width: 200px;
+      height: 200px;
+      background: url('andre.jpg') no-repeat center;
+      background-size: cover;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+
+    .conteudo {
+      max-width: 600px;
     }
 
     h1 {
-      font-size: 48px;
-      margin: 0;
-      color: #000;
+      font-size: 42px;
+      margin: 0 0 20px 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -38,9 +57,26 @@
   <div class="top"></div>
 
   <div class="bottom">
-    <h1>Apiça</h1>
+    <div class="foto"></div>
+
+    <div class="conteudo">
+      <h1>André</h1>
+      <p>
+        André é uma figura única, conhecido pelo seu estilo marcante e presença inesquecível.
+        Com uma personalidade forte e um olhar expressivo, ele destaca-se facilmente em qualquer ambiente.
+      </p>
+
+      <p>
+        Criativo e autêntico, André gosta de explorar novas ideias e não tem medo de ser diferente.
+        A sua forma de ver o mundo mistura humor, intensidade e originalidade.
+      </p>
+
+      <p>
+        Seja pela sua aparência ou atitude, André deixa sempre uma impressão duradoura.
+        Uma presença que não passa despercebida.
+      </p>
+    </div>
   </div>
 
 </body>
 </html>
-
