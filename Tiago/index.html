@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>Pila</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-  }
-  img {
-    max-width: 100%;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apiça</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+    }
+
+    .top {
+      width: 100%;
+      height: 250px;
+      background: url('andre.jpg') no-repeat center;
+      background-size: cover;
+    }
+
+    .bottom {
+      background-color: #d6b656;
+      height: calc(100vh - 250px);
+      display: flex;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
 
-<img src="Images/daddy.jpg" alt="Image">
+  <div class="top"></div>
+
+  <div class="bottom">
+    <h1>Apiça</h1>
+  </div>
 
 </body>
 </html>
