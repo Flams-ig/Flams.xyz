@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Biografia/index.html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -137,3 +138,148 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografias - ApiçA</title>
+  <style>
+    /* Reset básico e garantir que o corpo ocupe a tela toda */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container principal em coluna */
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Parte de Cima: A Imagem que estica (50% da altura da tela) */
+    .topo {
+      height: 50vh;
+      width: 100%;
+      background-color: #000;
+    }
+
+    .topo img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill; /* Estica a imagem conforme a janela muda */
+      display: block;
+    }
+
+    /* Parte de Baixo: Fundo Amarelo contendo o título e as biografias */
+    .conteudo-amarelo {
+      background-color: #E6D45E; /* O amarelo da imagem */
+      min-height: 50vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .titulo-apica {
+      margin: 0 0 40px 0;
+      font-size: clamp(40px, 8vw, 80px);
+      color: #000;
+      font-weight: normal;
+    }
+
+    /* Layout das Biografias */
+    .biografias-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: flex-start;
+    }
+
+    .card {
+      display: flex;
+      gap: 20px;
+      max-width: 500px;
+      align-items: center;
+    }
+
+    .foto {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      flex-shrink: 0;
+      border: 3px solid #000;
+    }
+
+    .info h1 {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+    
+    <div class="topo">
+      <img src="andre.jpg" alt="Topo Esticado">
+    </div>
+
+    <div class="conteudo-amarelo">
+      <h1 class="titulo-apica">Team ApiçA</h1>
+
+      <div class="biografias-container">
+        
+        <div class="card">
+          <div class="foto" style="background-image: url('andre.jpg');"></div>
+          <div class="info">
+            <h1>ApiçA</h1>
+            <p>André Dinis (ApiçA) é um artista rico verbalmente e visualmente tambem.</p>
+            <p>Criativo, autêntico e gay.</p>
+            <a href="https://www.instagram.com/flams._/" target="_blank">Visitar Instagram</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="foto" style="background-image: url('tomas.png');"></div>
+          <div class="info">
+            <h1>Dr.PintelhoCortado</h1>
+            <p>Tomás (Dr.PintelhoCortado) é o gajo que faz as letras mas so as vezes.</p>
+            <p>Lowkey bitchless💪💪💪</p>
+            <a href="https://www.instagram.com/tomasvfn/" target="_blank">Visitar Instagram</a>  
+          </div>
+        </div>
+
+ <div class="card">
+          <div class="foto" style="background-image: url('tiago.png');"></div>
+          <div class="info">
+            <h1>Tuberculo</h1>
+            <p>Tiago (Tuberculo) é o nosso daddy e criador do website.</p>
+            <p>Sempre pronto para uma boa sessão e para experimentar coisas sinistras.</p>
+            <a href="https://www.instagram.com/tia_ve9/" target="_blank">Visitar Instagram</a>  
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer style="background-color:#111; color:white; text-align:center; padding:20px;">
+  <p>© 2026 - Pila</p>
+  <a href="https://www.instagram.com/apica.wav/" target="_blank" 
+     style="color:#E1306C; text-decoration:none; font-weight:bold;">
+    Segue no Instagram
+  </a>
+</footer>
+</html>
+>>>>>>> 7c311c79b6af24a2933280cc7759dfaccfd44f97:Tiago/index.html
